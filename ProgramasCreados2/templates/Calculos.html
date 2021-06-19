@@ -1,0 +1,39 @@
+{% extends "Proyecto.html" %} 
+
+{% block estilos %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Opciones.css')}}">
+
+{% endblock %}
+
+{% block contenido %}
+    <section class="Principal">
+        <form action="" method="POST" id="form">
+            <div class="Form">
+                <h1>Calculos</h1>
+                <select class="Form-Select" name="select">
+                    <option value="0">Seleccione una Opcion</option>
+                    <option value="1">Fibonacci</option>
+                    <option value="2">Divisores</option>
+                    <option value="3">Primos</option>
+                    <option value="4">Primos Gemelos</option>
+                    <option value="5">Perfecto</option>
+                    <option value="6">Amigos</option>
+                    <option value="7">Invertir Numero</option>
+                    <option value="8">Base 2 A Base 10</option>
+                    <option value="9">Base 10 a Base 2</option>
+                    <option value="10">Cualquier Base</option>
+                </select>
+                <div class="Form-Grupo" id="valor1"> 
+                    <input class="Form-Control" type="Form-Control" type="Text" name="valor1" id="valor1" value="{{n1}}"><span class="Barra"></span>
+                    <label class="Form-Label"for="">valor1</label>
+                </div>
+                <div class="Form-Grupo" id="valor2">
+                    <input class="Form-Control" type="Form-Control" type="Text" name="valor2" id="valor2" value="{{n2}}"><span class="Barra"></span>
+                    <label class="Form-Label"for="">valor2</label>
+                </div>
+                <button class="Btn" type="submit">Aceptar</button>
+                <textarea cols="60" rows="5">{{respuesta}}</textarea>
+            </div>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "Proyecto.html" %}
+
+{% block estilos %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/Proyecto.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/Opciones.css')}}">
+{% endblock %}    
+
+{% block contenido %}
+<section class="Secundaria">
+    <div class="Escritura">
+        <h1>Ayuda Del Sistema</h1>
+    </div>
+    <div class= "Recuadros">
+        <div class="AyudaC">
+            <h2>
+                Colecciones
+            </h2>
+            <p>
+                Son tipos de datos que sirven para agrupar dos o mas elementos en un arreglo con distintos números de índex, por lo que nos ayuda a agrupar elementos, como son: 
+                <b>listas</b>, <b>tuplas</b> y <b>diccionarios</b>
+            </p>
+        </div>
+        <div class="AyudaC">
+            <h2>
+                Cálculos
+            </h2>
+            <p>
+                Esta opción permitirá evaluar diversas cantidades de números, los cuales son usados en diversas opciones identificando el  tipo de numero que es.
+            </p>
+        </div>
+        <div class="AyudaC">
+            <h2>
+                Cadenas
+            </h2>
+            <p> 
+                La <b>Cadena</b> es una serie de caracteres de forma ordenada de elementos como son: <b> letras, números u otros signos o símbolos </b>que pertenecen a un cierto alfabeto.
+                </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "Proyecto.html" %} 
+
+{% block estilos %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Opciones.css')}}">
+
+{% endblock %}
+
+{% block contenido %}
+    <section class="Principal">
+        <form action="" method="POST" id="form">
+            <div class="Form">
+                <h1>Ejercicios</h1>
+                <select class="Form-Select" name="select">
+                    <option value="0">Seleccione una Opcion</option>
+                    <option value="1">Ejercicio 1</option>
+                    <option value="2">Ejercicio 2</option>
+                    <option value="3">Ejercicio 3</option>
+                    <option value="4">Ejercicio 4</option>
+                    <option value="5">Ejercicio 5</option>
+                    <option value="6">Ejercicio 6</option>
+                    <option value="7">Ejercicio 7</option>
+                    <option value="8">Ejercicio 8</option>
+                    <option value="9">Ejercicio 9</option>
+                    <option value="10">Ejercicio 10</option>
+                    <option value="11">Ejercicio 11</option>
+                    <option value="12">Ejercicio 12</option>
+                    <option value="13">Ejercicio 13</option>
+                    <option value="14">Ejercicio 14</option>
+                    <option value="15">Ejercicio 15</option>
+                    <option value="16">Ejercicio 16</option>
+                    <option value="17">Ejercicio 17</option>
+                    <option value="18">Ejercicio 18</option>
+                    <option value="19">Ejercicio 19</option>
+                    <option value="20">Ejercicio 20</option>
+                    <option value="21">Ejercicio 21</option>
+                    <option value="22">Ejercicio 22</option>
+                    <option value="23">Ejercicio 23</option>
+                    <option value="24">Ejercicio 24</option>
+                    <option value="25">Ejercicio 25</option>
+                    <option value="26">Ejercicio 26</option>
+                    <option value="27">Ejercicio 27</option>
+                    <option value="28">Ejercicio 28</option>
+                    <option value="29">Ejercicio 29</option>
+                    <option value="30">Ejercicio 30</option>
+                    <option value="31">Ejercicio 31</option>
+                    <option value="32">Ejercicio 32</option>
+                    <option value="33">Ejercicio 33</option>
+                    <option value="34">Ejercicio 34</option>
+                    <option value="35">Ejercicio 35</option>
+                    <option value="36">Ejercicio 36</option>
+                    <option value="37">Ejercicio 37</option>
+                    <option value="38">Ejercicio 38</option>
+                    <option value="39">Ejercicio 39</option>
+                    <option value="40">Ejercicio 40</option>
+                    <option value="41">Ejercicio 41</option>
+                    <option value="42">Ejercicio 42</option>
+                    <option value="43">Ejercicio 43</option>
+                </select>
+                <div class="Form-Grupo" id="valor1"> 
+                    <input class="Form-Control" type="Form-Control" type="Text" name="valor1" id="valor1" value="{{n1}}"><span class="Barra"></span>
+                    <label class="Form-Label"for="">valor1</label>
+                </div>
+                <div class="Form-Grupo" id="valor2">
+                    <input class="Form-Control" type="Form-Control" type="Text" name="valor2" id="valor2" value="{{n2}}"><span class="Barra"></span>
+                    <label class="Form-Label"for="">valor2</label>
+                </div>
+                <button class="Btn" type="submit">Aceptar</button>
+                <textarea cols="60" rows="5">{{respuesta}}</textarea>
+            </div>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,166 @@
+body{
+    font-family: 'Abel', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(240, 162, 68);
+    width: 100%;
+    box-shadow: 0 0 6px 2px rgb(240, 162, 68);
+    border-radius: 2px;
+}
+nav.Contenedor{
+    height: 70px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    height: 60px;
+    animation: MoverIzquierda 1s ease-in;
+}
+.Logo img{
+    height: 100%;
+    vertical-align: top;
+}
+.Img1{
+    border-radius: 100px;
+}
+.Enlaces{
+    animation: MoverDerecha 1s ease-in;
+}
+.Opciones{
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    margin: 1.5rem;
+    padding: 5px 15px;
+    box-shadow: 5px 0 #ba4623 inset;
+    transition: all .8s ease;
+}
+.Opciones:hover{
+    color: white;
+    margin-left: 35px;
+    box-shadow: 200px 0 #ba4623 inset ;
+    border-radius: 6px;
+}
+.Salchipapa{
+    height: 100%;
+    width: 70px;
+    animation: MoverDerecha 1s ease-in;
+    display: none;
+}
+.Principal{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: rgb(211, 211, 211);
+    background: linear-gradient(to right, #ffd280,  #ffffff);
+    /*background: linear-gradient(to right, #7fb898,  #ffffff);*/
+}
+.Principal img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    animation: Arriba 1s ease-in;
+}
+.Texto{
+    width: 50%;
+    color: rgb(179, 62, 62);
+}
+.Texto h1{
+    font-size: 5em;
+    animation: MoverDerecha 1s ease-in;
+}
+.Texto h2{
+    font-size: 2em;
+    animation: MoverIzquierda 1s ease-in;
+}
+.Texto a{
+    display:inline-block;
+    color:rgb(0, 0, 0);
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #000000;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0;
+    animation: Arriba 1s ease-in;
+}
+.Texto a:hover{
+    background: linear-gradient(to right, #d6712d,  #ffffff);
+}
+@keyframes MoverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes MoverDerecha{
+    0%{
+        opacity: 0;
+        transform: translate(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes Arriba{
+    0%{
+        opacity: 0;
+        transform: translatey(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+@media screen and (max-width: 1000px){
+    .Texto{
+        font-size: 10px;
+        width: 100%;
+    }
+    .Principal{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:800px){
+    .Salchipapa{
+        display:block;
+    }
+    .Enlaces{
+        position: fixed;
+        background: #ffd280;
+        left: 0;
+        top: 70px;
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+    }
+    .Enlaces2{
+        transform: translateX(0%);
+    }
+}
+form{
+    animation: Arriba 1s ease-in;
+}

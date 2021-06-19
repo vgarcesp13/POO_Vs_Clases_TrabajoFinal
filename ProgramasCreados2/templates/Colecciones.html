@@ -1,0 +1,40 @@
+{% extends "Proyecto.html" %} 
+
+{% block estilos %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Opciones.css')}}">
+
+{% endblock %}
+
+{% block contenido %}
+    <section class="Principal">
+        <form action="" method="POST" id="form">
+            <div class="Form">
+                <h1>Colecciones</h1>
+                <select class="Form-Select" name="select">
+                    <option value="0">Seleccione una Opcion</option>
+                    <option value="1">Obtener Elementos</option>
+                    <option value="2">Recorrer Tupla</option>
+                    <option value="3">Recorrer Lista</option>
+                    <option value="4">Recorrer Diccionario</option>
+                    <option value="5">Invertir Lista</option>
+                    <option value="6">Lista De Tupla</option>
+                    <option value="7">Lista De Diccionario</option>
+                    <option value="8">Operaciones Lista</option>
+                    <option value="9">Comprehension Lista</option>
+                    <option value="10">Comprehension Diccionario</option>
+                </select>
+                <div class="Form-Grupo" id="valor1">
+                    <input class="Form-Control" type="Form-Control" type="Text" name="valor1" id="valor1" value="{{n1}}" ><span class="Barra"></span>
+                    <label class="Form-Label"for="">Valor1</label>
+                </div>
+                <div class="Form-Grupo" id="valor2">
+                    <input class="Form-Control" type="Form-Control" type="Text" name="valor2" id="valor2" value="{{n2}}" ><span class="Barra"></span>
+                    <label class="Form-Label"for="">Valor2</label>
+                </div>
+                <button class="Btn" id="aceptar" type="submit">Aceptar</button>
+                <textarea cols="60" rows="5">{{respuesta}}</textarea>
+            </div>
+        </form>
+    </section>
+{% endblock %}
+    

@@ -1,0 +1,41 @@
+{% extends "Proyecto.html" %} 
+
+{% block estilos %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Opciones.css')}}">
+
+{% endblock %}
+
+{% block contenido %}
+    <section class="Principal">
+        <form action="" method="POST" id="form">
+            <div class="Form">
+                <h1>Cadenas</h1>
+                <select class="Form-Select" name="select">
+                    <option value="0">Seleccione una Opcion</option>
+                    <option value="1">Recorrer Cadena</option>
+                    <option value="2">Invertir Cadena</option>
+                    <option value="3">Buscar Un Caracter</option>
+                    <option value="4">Vocales En Cadena</option>
+                    <option value="5">Ocurrencias Caracter</option>
+                    <option value="6">Concatenar Cadena</option>
+                    <option value="7">Reemplazar Caracte En Cadena</option>
+                    <option value="8">Crear Lista De Una Cadena</option>
+                    <option value="9">Crear Cadena De Una Lista</option>
+                    <option value="10">Buscar Subcadena En Cadena</option>
+                    <option value="11">Insertar Subcadena En Cadena</option>
+            
+                </select>
+                <div class="Form-Grupo" id="valor1">
+                    <input class="Form-Control" type="Form-Control" type="Text" name="valor1" id="valor1" value="{{n1}}"><span class="Barra"></span>
+                    <label class="Form-Label"for="">Valor1</label>
+                </div>
+                <div class="Form-Grupo">
+                    <input class="Form-Control" type="Form-Control" type="Text" name="valor2" id="valor2" value="{{n2}}"><span class="Barra"></span>
+                    <label class="Form-Label"for="">Valor2</label>
+                </div>
+                <button class="Btn" type="submit">Aceptar</button>
+                <textarea cols="60" rows="5">{{respuesta}}</textarea>
+            </div>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,253 @@
+:root{
+    --color-Textos: #000000;
+}
+*
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+    color: rgb(179, 62, 62);
+}
+form{
+    background: rgb(255, 255, 255);
+    padding: 40px 14px;
+    box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 1px solid #000000
+}
+.Form{
+    width: 100%;
+    margin: auto;
+}
+form .Form-Grupo{
+    position: relative;
+    margin: 45px;
+}
+.Form-Select{
+    color: linear-gradient(to right,  #d6712d,  #ffffff);
+    font-size: 18px;
+    padding: 10px 30px;
+    margin: 45px;
+    display: block;
+    border: none;
+    border-bottom: 2px solid var(--color-Textos);
+}
+.Form-Control{
+    background: none;
+    color: var(--color-Textos);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-Textos);
+}
+.Form-Control:focus{
+    outline: none;
+    color:rgb(0, 0, 0);
+}
+.Form-Label{
+    color: rgb(214, 214, 214);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+.Form-Control:focus~.Form-Label,
+.Form-Control:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: rgb(179, 62, 62);
+}
+.Barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.Barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right,  #d6712d,  #ffffff);
+    transition: 0.3 ease width;
+    left: 0;
+}
+.Form-Control:focus~.Barra::before{
+    width: 100%;
+}
+.Btn{
+    font-family: 'roboto';
+    background: #4568DC;
+    background: linear-gradient(to right,  #e27b37,  #ffdca8);
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.Btn:hover{
+
+    box-shadow: 1px 1px 5px #1f2e58;
+    background: linear-gradient(to right,  #ffdca8, #e27b37);
+}
+@media screen and (max-width: 500px){
+    form{
+        width: 80%;
+    }
+}
+/*.Escritura{
+    width: 100%;
+    height: 0px;
+    color: rgb(179, 62, 62);
+    padding: 10px 0px 15px 0px;
+    font-size: 4em;
+}
+.Recuadros{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0% 10% 0% 10%;
+    display: flex;
+    overflow:hidden;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.AyudaColecciones{
+    background:rgb(255, 184, 102);
+    border: 1px solid #000000;
+    width: 30%;
+    text-align: center;
+    padding: 100px 10px 100px 10px;
+    box-shadow: 0 0 3px 3px rgba(117, 117, 117, 0.8);
+}
+.AyudaCalculos{
+    background:rgb(255, 184, 102);
+    border: 1px solid #000000;
+    width: 30%;
+    text-align: center;
+    padding: 100px 10px 100px 10px;
+    box-shadow: 0 0 3px 3px rgba(117, 117, 117, 0.8);
+    
+}
+.AyudaCadenas{
+    background:rgb(255, 184, 102);
+    border: 1px solid #000000;
+    width: 30%;
+    text-align: center;
+    padding: 100px 10px 100px 10px;
+    box-shadow: 0 0 3px 3px rgba(117, 117, 117, 0.8);
+}
+.Secundaria{
+    background: linear-gradient(to right, #ffd280,  #ffffff);
+    width: 100%;
+    height: 85vh;
+    display: block;
+    align-items: center;
+    margin: auto;
+}*/
+.Secundaria{
+    background: linear-gradient(to right, #ffd280, #ffffff);
+    width: 100%;
+    height: 95vh;
+}
+.Escritura{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    color: rgb(179, 62, 62);
+    padding: 10px 0px;
+}
+.Recuadros{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.AyudaC{
+    background: #f8ff92;
+    color: #000000;
+    border: 1px solid #000000;
+    margin: 0px 15px;
+    padding: 100px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px#000000;
+    width: 30%;
+    align-content: center;
+    box-sizing: border-box;
+}
+.AyudaC p{
+    text-align:justify
+}
+
+@media (max-width: 1100px){
+    .Escritura{
+        font-size: 3.5em;
+    }
+    .AyudaC{
+        width:45%;
+        margin-bottom: 15px;
+        align-content: center;
+    }
+    .Secundaria{
+        background: linear-gradient(to right, #ffd280, #ffffff);
+        width: 100%;
+        height: 160vh;
+    }
+}
+@media (max-width: 900px){
+    .Escritura{
+        font-size: 3em;
+    }
+    .AyudaC{
+        width: 45%;
+        margin-bottom: 15px;
+    }
+    .Secundaria{
+        background: linear-gradient(to right, #ffd280, #ffffff);
+        width: 100%;
+        height: 160vh;
+    }
+}
+@media (max-width: 750px){
+    .Escritura{
+        font-size: 2.5em;
+    }
+    .AyudaC{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .Secundaria{
+        background: linear-gradient(to right, #ffd280, #ffffff);
+        width: 100%;
+        height: 210vh;
+    }
+}
+@media (max-width: 550px){
+    .Escritura{
+        font-size: 2em;
+    }
+    .AyudaC{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .Secundaria{
+        background: linear-gradient(to right, #ffd280, #ffffff);
+        width: 100%;
+        height: 210vh;
+    }
+}
